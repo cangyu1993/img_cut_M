@@ -1,5 +1,5 @@
 ## vue-image-cropper 基于vue的图片压缩裁剪插件
-
+## 转载segmentfault独木桥先生：地址[https://github.com/Q956164483/vue-image-cropper]
 ### 1.功能说明
 图片压缩，图片裁剪，vue图片压缩，vue图片裁剪，vue-image-cropper，解决了部分机型方向不对的问题，同时可以对图片进行尺寸和质量的压缩
 ### 2.[效果演示](https://q956164483.github.io/vue-image-cropper/dist/#/)(chrome调试模式下或者手机打开)
@@ -31,7 +31,7 @@ cropperConfig: {
   maxWidth: 750 // 导出的图片的最大宽度
 }
 ```
-### 目前这个组件已经在我们的多个项目上用到，暂未发现问题，欢迎提问题一起完善，如果帮您解决了问题，请给个star，谢谢啦0.0
+
 
 
 
