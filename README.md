@@ -15,12 +15,24 @@ yarn run dev
 2. 在需要使用的页面直接引入imageCropper组件并绑定cropperConfig配置参数和裁剪之后的回调函数callback
 ```HTML
 <image-cropper ref="imageCropper" :cropperConfig="cropperConfig" :callback="loadImage"></image-cropper>
+ <div class="avatar_" id="avartar_"  @click="selectFile">
+            <div class="avatar_left">
+              <span>头像</span>
+              <img v-lazy="personal_msg.user_img" :key="personal_msg.user_img" class="avartar">
+            </div>
+            <van-icon name="arrow"/>
+</div>
 ```
 ```javascript
 loadImage (data) {
   console.log(data)
   // data为base64字符串
 }
+
+//获取图片上传窗口
+      selectFile() {
+        this.$refs.imageCropper.checkPhoto()
+      },
 ```
 ### 5.参数说明
 ```javascript
